@@ -10,14 +10,78 @@
 
   
 
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">BEM-VINDO À ADD!</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Outlet</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Marcas
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Puma</a></li>
+              <li><a class="dropdown-item" href="#">Adidas</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Nike</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" aria-disabled="true">Novidades</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Busque</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
   <div class="container text-center">
     <div class="row">
       <div class="col">
         <div class="card" style="width: 18rem;">
           <img src="https://assets.adidas.com/images/w_600,f_auto,q_auto/763fb5a2d82d448ca62baf4600f657c6_9366/Tenis_Gazelle_Bold_Preto_HQ6912_01_standard.jpg" class="card-img-top" alt="...">
           <div class="card-body">
-            <h5 class="card-title">TENIS GAZELLE BOLD
-              R$699,99</h5>
+            <h5 class="card-title">TENIS GAZELLE BOLD</h5>
+            <h5 class="card-title">R$699,99</h5>
+            <p class="card-text">***UNISSEX, FORMATO GRANDE***
+              Para pés mais finos, recomendamos que compre um tamanho menor do que o de costume.</p>
+            <a href="produtos" class="btn btn-primary">Mostrar mais...</a>
+          </div>
+        </div>
+      </div>
+      <div class="container text-center">
+        <div class="row">
+          <div class="col">
+            <div class="card" style="width: 18rem;">
+              <img src="data:image/jpeg;base64,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" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">TENIS NIKE PRETO 
+                R$800.00         L  BDP - Preto 
+                </h5>
+                <p class="card-text">***UNISSEX, FORMATO GRANDE***
+                  Para pés mais finos, recomendamos que compre um tamanho menor do que o de costume.</p>
+                <a href="produtos" class="btn btn-primary">Mostrar mais...</a>
+              </div>
+            </div>
+          </div>
+      <div class="col">
+        <div class="card" style="width: 18rem;">
+          <img src="https://assets.adidas.com/images/w_600,f_auto,q_auto/b0fd05cae60a48a6bd20c800cb0b8636_9366/Tenis_Gazelle_Azul_IG0666_HM1.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">TÊNIS GAZELLE
+              R$599,99  L  BDP - Azul</h5>
             <p class="card-text">***UNISSEX, FORMATO GRANDE***
               Para pés mais finos, recomendamos que compre um tamanho menor do que o de costume.</p>
             <a href="produtos" class="btn btn-primary">Mostrar mais...</a>
@@ -26,10 +90,9 @@
       </div>
       <div class="col">
         <div class="card" style="width: 18rem;">
-          <img src="https://assets.adidas.com/images/w_600,f_auto,q_auto/b0fd05cae60a48a6bd20c800cb0b8636_9366/Tenis_Gazelle_Azul_IG0666_HM1.jpg" class="card-img-top" alt="...">
+          <img src="data:image/jpeg;base64,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" class="card-img-top" alt="...">
           <div class="card-body">
-            <h5 class="card-title">TÊNIS GAZELLE
-              R$599,99</h5>
+            <h5 class="card-title">Tênis Feminino Puma Carina L BDP - Branco</h5>
             <p class="card-text">***UNISSEX, FORMATO GRANDE***
               Para pés mais finos, recomendamos que compre um tamanho menor do que o de costume.</p>
             <a href="produtos" class="btn btn-primary">Mostrar mais...</a>
