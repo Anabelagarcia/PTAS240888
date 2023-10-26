@@ -1,3 +1,12 @@
 .h{
     color:blue;
 }
+
+.img-container {
+    text-align: center;
+    display:block;
+  }
+
+  .centralizar {
+    text-align: center;
+  }
