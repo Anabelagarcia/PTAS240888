@@ -1,0 +1,16 @@
+.produtos{
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.card-img-top{
+    width: 500px;
+    height: 500px;
+}
+

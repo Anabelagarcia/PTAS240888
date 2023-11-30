@@ -55,7 +55,7 @@
 
           <div class="col">
             <div class="card" style="width: 18rem;">
-              <img src= "<%= produto.imagem %>" alt="Produto 1">
+              <img src="/imagens/<%= produto.imagem %>" alt="Produto 1">
               <div class="card-body">
                 <h5 class="card-title"> <%= produto.nome %></h5>
                 <p class="card-text"><%= produto.preco %></p>
@@ -66,44 +66,7 @@
           </div>
           <% } %>
         </div></div>
-           <!----
-      <div class="col">
-        <div class="card" style="width: 18rem;">
-          <img src="https://assets.adidas.com/images/w_600,f_auto,q_auto/b0fd05cae60a48a6bd20c800cb0b8636_9366/Tenis_Gazelle_Azul_IG0666_HM1.jpg" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">TÊNIS GAZELLE
-              R$599,99  L  BDP - Azul</h5>
-            <p class="card-text">***UNISSEX, FORMATO GRANDE***
-              Para pés mais finos, recomendamos que compre um tamanho menor do que o de costume.</p>
-            <a href="produtos" class="btn btn-primary">Mostrar mais...</a>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card" style="width: 18rem;">
-          <img src="data:image/jpeg;base64,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" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Tênis Feminino Puma Carina L BDP - Branco</h5>
-            <p class="card-text">***UNISSEX, FORMATO GRANDE***
-              Para pés mais finos, recomendamos que compre um tamanho menor do que o de costume.</p>
-            <a href="produtos" class="btn btn-primary">Mostrar mais...</a>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card" style="width: 18rem;">
-          <img src="https://assets.adidas.com/images/w_600,f_auto,q_auto/436e87f485054d24b293e199d99cd9cd_9366/Tenis_Adizero_Prime_X_2.0_STRUNG_Verde_HP9708_01_standard.jpg" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">TÊNIS ADIZERO PRIME X 2.0 STRUNG</h5>
-            <p class="card-text">***UNISSEX, FORMATO GRANDE***
-              Para pés mais finos, recomendamos que compre um tamanho menor do que o de costume.</p>
-            <a href="produtos" class="btn btn-primary">Mostrar mais...</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
--->
+           
 
   
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>

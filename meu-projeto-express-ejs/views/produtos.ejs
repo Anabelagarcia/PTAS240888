@@ -2,29 +2,32 @@
 <html>
 <head>
   <title>Projeto Express e EJS</title>
-  
-  <link rel="stylesheet" type="text" href="/style.css">
+  <link rel="stylesheet" type="text/css" href="/produto.css">
+
   
   </head>
 
   
   
 <body>
-  <h1><%= message %></h1>
+  <div class = "produtos">
+  <h1>Compre aqui!</h1>
   <h2 class="h">Produtos</h2>
   
   <div class="text-center">
 
     <div class="card" style="width: 50rem;">
       <div class="img-container">
-      <img src="https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/388cc56d99a14bbe9a1176671d4bab1a_9366/Tenis_Gazelle_Azul_IG0666_HM3_hover.jpg" class="card-img-top" alt="...">
+      <img src=" /imagens/<%= produto.imagem %> " class="card-img-top" alt="...">
       <div class="card-body">
-        <h5 class="card-title">TÊNIS GAZELLE</h5>
-        <p class="card-text">Para qualidade e conforto compre ADD.</p>
+        <h5 class="card-title"><%= produto.nome %></h5>
+        <p class="card-text"><%= produto.preco %></p>
+        <p class="card-text"><%= produto.descricao %></p>
       </div>
       </div>
     </div>
   </div>
+</div>
 </div>
 
 
